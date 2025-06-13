@@ -7,7 +7,7 @@ import util.Logger;
 
 public abstract class AtividadeDAO {
     // Caminho corrigido para o arquivo de dados
-    private static final String ARQUIVO = "dados/atividades/atividades.dat"; 
+    private static final String ARQUIVO = "src/dados/atividades/atividades.dat";
 
     public static void salvar(ArrayList<Atividade> atividades) {
         try {

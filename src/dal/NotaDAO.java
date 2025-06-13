@@ -7,7 +7,7 @@ import util.Logger;
 
 public class NotaDAO {
     // Caminho corrigido para o arquivo de dados
-    private final String ARQUIVO = "dados/notas/notas.dat"; 
+    private final String ARQUIVO = "src/dados/notas/notas.dat";
 
     public void salvar(ArrayList<Nota> notas) {
         try {

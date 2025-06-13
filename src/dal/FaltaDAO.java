@@ -7,7 +7,7 @@ import util.Logger;
 
 public class FaltaDAO {
     // Caminho corrigido para o arquivo de dados
-    private final String ARQUIVO = "dados/faltas/faltas.dat"; 
+    private final String ARQUIVO = "src/dados/faltas/faltas.dat";
 
     public void salvar(ArrayList<Falta> faltas) {
         try {
