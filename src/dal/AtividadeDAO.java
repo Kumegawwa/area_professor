@@ -6,13 +6,11 @@ import model.Atividade;
 import util.Logger;
 
 public abstract class AtividadeDAO {
-    // Caminho corrigido para o arquivo de dados
     private static final String ARQUIVO = "src/dados/atividades/atividades.dat";
 
     public static void salvar(ArrayList<Atividade> atividades) {
         try {
             File file = new File(ARQUIVO);
-            // Garante que a pasta 'dados/atividades' exista
             file.getParentFile().mkdirs(); 
             try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file))) {
                 oos.writeObject(atividades);

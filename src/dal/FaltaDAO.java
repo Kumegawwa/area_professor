@@ -6,13 +6,11 @@ import model.Falta;
 import util.Logger;
 
 public class FaltaDAO {
-    // Caminho corrigido para o arquivo de dados
     private final String ARQUIVO = "src/dados/faltas/faltas.dat";
 
     public void salvar(ArrayList<Falta> faltas) {
         try {
             File file = new File(ARQUIVO);
-            // Garante que a pasta 'dados/faltas' exista
             file.getParentFile().mkdirs(); 
             try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file))) {
                 oos.writeObject(faltas);

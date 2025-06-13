@@ -6,13 +6,11 @@ import model.Nota;
 import util.Logger;
 
 public class NotaDAO {
-    // Caminho corrigido para o arquivo de dados
     private final String ARQUIVO = "src/dados/notas/notas.dat";
 
     public void salvar(ArrayList<Nota> notas) {
         try {
             File file = new File(ARQUIVO);
-            // Garante que a pasta 'dados/notas' exista
             file.getParentFile().mkdirs(); 
             try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file))) {
                 oos.writeObject(notas);
