@@ -1,4 +1,3 @@
-// Victor Gonçalves - RGM: 38094649 / Lucas Kumegawa de Godoi - RGM: 42045681 / Thauana Vitória - RGM: 37905236 
 package view;
 
 import controller.*;
